@@ -1,0 +1,42 @@
+#calculadora {
+  width: 25rem; 
+}
+
+#calculadora .card-header{
+
+}
+#calculadora .card-body{
+
+}
+
+#calculadora .operador{
+    width: 60px;
+}
+
+
+#calculadora #Anterior{
+    text-align: right;
+    font-family: "helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16pt;
+   }
+
+#calculadora #display{
+ text-align: right;
+ font-family: "helvetica", "Arial", sans-serif;
+ font-weight: bold;
+ font-size: 26pt;
+}
+
+#calculadora button{
+ margin: 5px;
+ height: 3em;
+}
+
+#calculadora .button-text{
+ font-family: "helvetica", "Arial", sans-serif;
+ font-weight: bold;
+ font-size: 16pt;
+
+}
+
