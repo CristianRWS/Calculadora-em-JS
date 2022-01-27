@@ -16,7 +16,10 @@ onload = () => {
     document.querySelector('#bt-minus').onclick = () => operador('-');
     document.querySelector('#bt-add').onclick = () => operador('+');
     document.querySelector('#bt-equals').onclick = calcula;
-    
+    document.querySelector('#nightMode').onclick = darkTheme;
+    document.querySelector('#dayMode').onclick = lightTheme;
+
+
 
 };
 
@@ -94,15 +97,100 @@ const calcula = () => {
             case '+': resultado = valorAnterior + valorAtual(); break;
             case '-': resultado = valorAnterior - valorAtual(); break;
             case '*': resultado = valorAnterior * valorAtual(); break;
-            case '/': resultado = valorAnterior / valorAtual(); break;        
+            case '/': resultado = valorAnterior / valorAtual(); break;
         }
         console.log(typeof valorAnterior);
-        sValor = resultado.toString().replace('.',',');
+        sValor = resultado.toString().replace('.', ',');
         //
     }
     ehNovoNumero = true;
     operacaoPendente = null;
     valorAnterior = 0;
     atualizaVisor();
+};
+
+
+
+
+// Mudança do tema dia para noite
+
+/*function darkTheme () {
+    document.querySelector('#bt-divide').className = ("btn, btn-dark, btn-block, button-text"),
+    document.querySelector('#bt-minus').className = ("btn, btn-dark, btn-block, button-text"),
+    document.querySelector('#bt-add').className = ("btn, btn-dark, btn-block, button-text"),
+    document.querySelector('#bt-multiply').className = ("btn, btn-dark, btn-block, button-text"),
+    document.querySelector('#bt-equals').className = ("btn, btn-info, btn-block, button-text"),
+}*/
+
+const darkTheme = () => {
+    //ativa/desativa o botão night mode
+    document.querySelector('#dayMode').className = ("dayMode")
+    document.querySelector('#nightMode').className = ("none")
+    //Botões Operadores e Igual/AC
+    document.querySelector('#bt-divide').className = ("btn btn-secondary btn-block button-text")
+    document.querySelector('#bt-minus').className = ("btn btn-secondary btn-block button-text")
+    document.querySelector('#bt-add').className = ("btn btn-secondary btn-block button-text")
+    document.querySelector('#bt-multiply').className = ("btn btn-secondary btn-block button-text")
+    document.querySelector('#bt-equals').className = ("btn btn-info btn-block button-text")
+    document.querySelector('#bt-ac').className = ("btn btn-danger btn-block button-text")
+    //Botões numéricos
+    document.querySelector('#bt-1').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-2').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-3').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-4').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-5').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-6').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-7').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-8').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-9').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-0').className = ("btn btn-dark btn-block button-text")
+    // botões de caracteres
+    document.querySelector('#bt-comma').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-rBracket').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#bt-lBracket').className = ("btn btn-dark btn-block button-text")
+    document.querySelector('#barra').className = ("btn btn-dark btn-block button-text")
+    // container principal
+    document.querySelector('#card-body').className = ("bodyDark")
+    // cabeçalho/display numérico
+    document.querySelector('#calculadoraHeader').className = ("headerDark")
+    document.querySelector('#bg').className = ("bgDark")
+    document.querySelector('#cal').className = ("calDark")
 }
+
+const lightTheme = () => {
+    //ativa/desativa o botão night mode
+    document.querySelector('#dayMode').className = ("none")
+    document.querySelector('#nightMode').className = ("nightMode")
+    //Botões Operadores e Igual/AC
+    document.querySelector('#bt-divide').className = ("btn btn-warning btn-block button-text")
+    document.querySelector('#bt-minus').className = ("btn btn-warning btn-block button-text")
+    document.querySelector('#bt-add').className = ("btn btn-warning btn-block button-text")
+    document.querySelector('#bt-multiply').className = ("btn btn-warning btn-block button-text")
+    document.querySelector('#bt-equals').className = ("btn btn-success btn-block button-text")
+    document.querySelector('#bt-ac').className = ("btn btn-danger btn-block button-text")
+    //Botões numéricos
+    document.querySelector('#bt-1').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-2').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-3').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-4').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-5').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-6').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-7').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-8').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-9').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-0').className = ("btn btn-light btn-block button-text")
+    // botões de caracteres
+    document.querySelector('#bt-comma').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-rBracket').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#bt-lBracket').className = ("btn btn-light btn-block button-text")
+    document.querySelector('#barra').className = ("btn btn-light btn-block button-text")
+    // container principal
+    document.querySelector('#card-body').className = ("bodyLight")
+    // cabeçalho/display numérico
+    document.querySelector('#calculadoraHeader').className = ("headerLight")
+    document.querySelector('#bg').className = ("bgLight")
+    document.querySelector('#cal').className = ("calLight")
+}
+
+
 

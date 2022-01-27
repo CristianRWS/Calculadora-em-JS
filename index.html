@@ -14,20 +14,34 @@
      />
      <link rel="stylesheet" href="./calculadora.css" />
      <script src="./calculadora.js"></script>
+     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
      
 </head>
-<body>
+<body id="bg" class="bgLight">
+         
+  <div class="titulo">
+                    <h1 id="cal" class="calLight">Calculadora</h1>
+                        <button id="nightMode" class="nightMode">
+                            <span class="iconify" data-icon="mdi:weather-night"></span>
+                        </button>
+                        <button id="dayMode" class = "none">
+                            <span class="iconify" data-icon="fa-solid:sun"></span>
+                        </button>
+
+            </div>
+
+            </div>
             <div class="container">
-        <h1>Calculadora</h1>
+                    
 
-        </button>
-
-        <div id="calculadora" class="card">
-            <div class="card-header">
+        <div id="calculadora" class="card-box">
+              
+            <div id="calculadoraHeader" class="headerLight">
                 <p id="Anterior" class="Anterior">0</p>
                 <p id="display" class="">0</p>
             </div>
-            <div class="card-body">
+
+            <div id="card-body" class="card-body">
                 <div class="row">
                     <div class="col">
                         <button id="bt-7" type="button" class="btn btn-light btn-block button-text">7</button>
@@ -39,7 +53,7 @@
                         <button id="bt-9" type="button" class="btn btn-light btn-block button-text">9</button>
                     </div>
                     <div class="col">
-                        <button id="bt-divide" type="button" class="operador">
+                        <button id="bt-divide" type="button" class="btn btn-warning btn-block button-text">
                             <i class="fa fa-divide"></i>
                         </button>
                     </div>
@@ -78,7 +92,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button id="bt-/" type="button" class="btn btn-light btn-block button-text">/</button>
+                        <button id="barra" type="button" class="btn btn-light btn-block button-text">/</button>
                     </div>
                     <div class="col">
                         <button id="bt-0" type="button" class="btn btn-light btn-block button-text">0</button>
@@ -106,10 +120,12 @@
                         <button id="bt-equals" type="button" class="btn btn-success btn-block button-text">
                             <i class="fa fa-equals"></i>
                         </button>
+                      
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class = "container"><h3 id="" class="" style="margin-left: 33px;">Project by: Berinjela.dev</h3> </div>
 </body>
 </html>

@@ -10,7 +10,9 @@
 }
 
 #calculadora .operador{
-    width: 60px;
+    width: 68px;
+    align-content: flex-end;
+    
 }
 
 
@@ -40,3 +42,128 @@
 
 }
 
+
+.dayMode{
+    text-align: center;
+    font-family: "helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 19pt;
+    width: 45px;
+    height: 45px;
+    align-self:center;
+    border-radius:50%;
+    background-color: #ebebeb;
+    border-color: transparent;
+    margin-left: 10px;
+    padding-bottom: 30;
+}
+
+.nightMode{
+    text-align: center;
+    font-family: "helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 19pt;
+    width: 45px;
+    height: 45px;
+    align-self:center;
+    border-radius:50%;
+    background-color: #0a0a0a;
+    border-color: transparent;
+    margin-left: 10px;
+    color: rgb(185, 184, 184);
+    padding-bottom: 30;
+
+}
+
+#calculadora #titulo{
+    
+}
+
+#calculadora .bodyLight {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: white;
+}
+#calculadora .bodyDark {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: rgb(0, 0, 0);
+}
+
+#calculadora .headerLight {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+#calculadora .headerDark {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #343a40;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: rgb(243, 243, 243);
+}
+
+.bgLight {
+    background-color: white;
+    color: black;
+}
+.bgDark {
+    background-color: rgb(39, 39, 39);
+    color: #ffffffc9;
+}
+
+
+
+.card-box {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #eeee;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: 0.25rem;
+}
+
+.titulo {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: black;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.calDark {
+    color: #ffffffde;
+}
+.calLight {
+    color: black;
+}
+
+
+.block {
+    display:flex;
+}
+
+.none {
+    display: none;
+}
