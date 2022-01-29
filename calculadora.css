@@ -52,10 +52,11 @@
     height: 45px;
     align-self:center;
     border-radius:50%;
-    background-color: #ebebeb;
+    background-color: #0a0a0a;
     border-color: transparent;
     margin-left: 10px;
     padding-bottom: 30;
+    color: #ebebeb;
 }
 
 .nightMode{
@@ -67,10 +68,10 @@
     height: 45px;
     align-self:center;
     border-radius:50%;
-    background-color: #0a0a0a;
+    background-color: #ebebeb;
     border-color: transparent;
     margin-left: 10px;
-    color: rgb(185, 184, 184);
+    color: #0a0a0a;
     padding-bottom: 30;
 
 }
